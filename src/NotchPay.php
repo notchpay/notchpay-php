@@ -13,7 +13,7 @@ class NotchPay
     private $instanceApiKey;
 
     /** @var string The base URL for the Paystack API. */
-    public static $apiBase = 'https://api-dev1239.notchpay.test';
+    public static $apiBase = 'https://api.notchpay.co';
 
     /**
      * @return string the API key used for requests
