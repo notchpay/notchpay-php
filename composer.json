@@ -1,5 +1,5 @@
 {
-    "name": "notchpay/php-sdk-next",
+    "name": "notchpay/notchpay-php",
     "type": "library",
     "description": "Notch Pay PHP Wrapper.",
     "keywords": [
