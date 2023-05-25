@@ -7,7 +7,7 @@ A PHP API wrapper for [Notch Pay](https://notchpay.co/).
 You can install the package via composer:
 
 ```bash
-composer require notchpay/php-sdk-next
+composer require notchpay/notchpay-php
 ```
 
 ## Usage
