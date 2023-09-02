@@ -6,13 +6,13 @@ use NotchPay\Exceptions\InvalidArgumentException;
 
 class NotchPay
 {
-    /** @var string The Paystack API key to be used for requests. */
+    /** @var string The Notch Pay API key to be used for requests. */
     public static string $apiKey;
 
     /** @var string The instance API key, settable once per new instance */
     private $instanceApiKey;
 
-    /** @var string The base URL for the Paystack API. */
+    /** @var string The base URL for the Notch Pay API. */
     public static $apiBase = 'https://api.notchpay.co';
 
     /**
@@ -39,7 +39,7 @@ class NotchPay
             throw new InvalidArgumentException('Api key must be a string and cannot be empty');
         }
 
-        if(substr( $apiKey, 0, 2 ) !== "b." && substr( $apiKey, 0, 3 ) !== "sb." ) {
+        if(substr( $apiKey, 0, 2 ) !== "b." && substr( $apiKey, 0, 3 ) !== "sb."  && substr( $apiKey, 0, 2 ) !== "pk.") {
             throw new InvalidArgumentException('Api key must have a valid signature.');
         }
         return true;

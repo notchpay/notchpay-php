@@ -28,7 +28,7 @@ abstract class Util
     }
 
     /**
-     * Converts a response from the Paystack API to the corresponding PHP object.
+     * Converts a response from the Notch Pay API to the corresponding PHP object.
      */
     public static function convertArrayToObject(array $resp): array|object
     {
