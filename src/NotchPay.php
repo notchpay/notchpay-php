@@ -39,7 +39,7 @@ class NotchPay
             throw new InvalidArgumentException('Api key must be a string and cannot be empty');
         }
 
-        if(substr( $apiKey, 0, 2 ) !== "b." && substr( $apiKey, 0, 3 ) !== "sb."  && substr( $apiKey, 0, 3 ) !== "pk.") {
+        if(substr( $apiKey, 0, 2 ) !== "b." && substr( $apiKey, 0, 3 ) !== "sb."  && substr( $apiKey, 0, 3 ) !== "pk." && substr( $apiKey, 0, 8 ) !== "pk_test.") {
             throw new InvalidArgumentException('Api key must have a valid signature.');
         }
         return true;
